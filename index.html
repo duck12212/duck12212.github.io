@@ -1,74 +1,213 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> My Blog </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://bootswatch.com/darkly/bootstrap.css" media="screen">
+  <link rel="stylesheet" href="http://bootswatch.com/assets/css/bootswatch.min.css">
+  <style>
+  body {
+    padding: 20px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  }
+  ul, li {
+    list-style:none;
+  }
+  .product {
+    width: 376px;
+    padding: 15px;
+    position: relative;
+    float: left;
+  }
+  .product > img {
+    display: block;
+    position: relative;
+    cursor:pointer;
+  }
+  .product:hover .product-hover, .product:active .product-hover {
+    opacity: 1;
+  }
+  .product-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+    background-size: 30px 30px;
+    background-image: -webkit-linear-gradient(45deg, rgba(234, 176, 176, 1) 25%, transparent 25%, transparent 50%, rgba(234, 176, 176, 1) 50%, rgba(234, 176, 176, 1) 75%, transparent 75%, transparent);
+    background-image: -moz-linear-gradient(45deg, rgba(234, 176, 176, 1) 25%, transparent 25%, transparent 50%, rgba(234, 176, 176, 1) 50%, rgba(234, 176, 176, 1) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(234, 176, 176, 1) 25%, transparent 25%, transparent 50%, rgba(234, 176, 176, 1) 50%, rgba(234, 176, 176, 1) 75%, transparent 75%, transparent);
+    -webkit-animation: barberpole 0.5s linear infinite;
+    -moz-animation: barberpole 0.5s linear infinite;
+    animation: barberpole 0.5s linear infinite;
+  }
+   @-webkit-keyframes barberpole {
+   from {
+   background-position: 0 0;
+  }
+  to {
+    background-position: 60px 30px;
+  }
+  }
+  @-moz-keyframes barberpole {
+   from {
+   background-position: 0 0;
+  }
+  to {
+    background-position: 60px 30px;
+  }
+  }
+  @keyframes barberpole {
+   from {
+   background-position: 0 0;
+  }
+  to {
+    background-position: 60px 30px;
+  }
+  }
+  h1 {
+    text-align:center;
+  }
+  .main {
+    margin:10px auto;
+    text-align:center;
+    overflow:hidden;
+  }
+  .info {
+    color:#333;
+    text-align:center;
+    font-size:14px;
+  }
+  .info a {
+    color:#333;
+    text-decoration:none;
+  }
+  .title {background-color:rgba(0,0,0,0.56); width:100%; position:fixed; top:0; left:0; font-size:12px; font-family:Verdana, Geneva, sans-serif; z-index:99999;}
+  .title a {color:#FFF; text-decoration:none; line-height:24px; padding:0 10px; letter-spacing: 1px;}
+  .title_r {float:right;}
+  .title_l {float:left;}
+  .title a:hover {background:#000;}
+  </style>
+  <style>
+  body {padding-top:70px;}
+  </style>
+</head>
+<body>
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+              <img alt="duck" src="duck.png" width="50" height="45">
+            </a>
+            <a href="index.html" class="navbar-brand">Duck</a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Themes <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="themes">
+                <li><a href="index.html">Home</a></li>
+                <li class="divider"></li>
+                <li><a href="Profile.html">Profile</a></li>
+                <li><a href="Skill.html">Skill</a></li>
+                <li><a href="Albums.html">Albums</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="https://github.com/duck12212" target="_blank">Github</a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=100000152798163" target="_blank">FB</a>
+            </li>
+          </ul>
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <title>Duck12212.github.io by duck12212</title>
-  </head>
-
-  <body>
-    <header>
-      <div class="inner">
-        <h1>Duck12212.github.io</h1>
-        <h2>duck</h2>
-        <a href="https://github.com/duck12212" class="button"><small>Follow me on</small> GitHub</a>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://builtwithbootstrap.com/" target="_blank">My achievements</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="Recommended sites">Recommended sites <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="Recommended sites">
+                <li><a href="http://getbootstrap.com/css/" target="_blank">Bootstrap</a></li>
+                <li class="divider"></li>
+                <li><a href="http://www.fun698.com/vod-read-id-68545.html" target="_blank">the ORIGINALS</a></li>
+                <li><a href="http://www.fun698.com/vod-read-id-68365.html" target="_blank">How To Get Away With Murder</a></li>
+                <li><a href="http://www.fun698.com/vod-read-id-68336.html" target="_blank">S.H.I.E.L.D.</a></li>
+                <li><a href="http://www.fun698.com/vod-read-id-68312.html" target="_blank">Scorpion</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-    </header>
-
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-        </section>
-
-        <aside id="sidebar">
-
-
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
+  </div>
+  <div class="container">
+    <div data-role="content" class="ui-content">
+      <div align="center">
+        <h1 class="text-center"><span class="glyphicon glyphicon-screenshot"></span><s><strong>Welcome To My Blog !</strong></s></h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-5 col-md-5 col-sm-12">
+        <!--<div class="main">-->
+          <ul>
+          <a href="Albums.html">
+          <li class="product">
+            <div class="product-hover"></div>
+              <img src="MY.jpg" class="img-responsive " alt="Responsive image" >
+          </li>
+          </a>
+          </ul>
+        <!--</div>-->
+        </div>
+        <div class="col-lg-7 col-md-7 col-sm-12">
+          <a href="Profile.html"><h1><p align="left">BlackDuck</p></h1></a>
+          <blockquote>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+          </blockquote>
+        </div>
       </div>
     </div>
-
-  
-  </body>
+  </div>
+    <!--<div class="table-responsive">
+    <div class="panel panel-default">
+      <table class="table  Hover rows Bordered table ">
+        <tr>
+          <th class="danger">姓名</th>
+          <th class="danger">學號</th>
+          <th class="danger">系級</th>
+        </tr>
+        <tr>
+          <td class="success">duck</td>
+          <td class="warning">4101056020</td>
+          <td class="info">CSE 3</td>
+        </tr>
+        <tr>
+          <td class="success">pomelo</td>
+          <td class="warning">4101056030</td>
+          <td class="info">CSE 3</td>
+        </tr>
+        <tr>
+          <td class="success">jerry</td>
+          <td class="warning">4101056019</td>
+          <td class="info">CSE 3</td>
+        </tr>
+      </table>
+      </div>
+    </div>-->
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="http://bootswatch.com/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="http://bootswatch.com/assets/js/bootswatch.js"></script>
+</body>
 </html>

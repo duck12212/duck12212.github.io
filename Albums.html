@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> My Blog </title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://bootswatch.com/darkly/bootstrap.css" media="screen">
+	<link rel="stylesheet" href="http://bootswatch.com/assets/css/bootswatch.min.css">
+	<style>
+	body {
+		padding: 20px;
+		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+	ul, li {
+		list-style:none;
+	}
+	.product {
+		width: 376px;
+		padding: 15px;
+		position: relative;
+		float: left;
+	}
+	.product > img {
+		display: block;
+		position: relative;
+		cursor:pointer;
+	}
+	.product:hover .product-hover, .product:active .product-hover {
+		opacity: 1;
+	}
+	.product-hover {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 0;
+		-webkit-transition: opacity 0.3s ease;
+		-moz-transition: opacity 0.3s ease;
+		transition: opacity 0.3s ease;
+		background-size: 30px 30px;
+		background-image: -webkit-linear-gradient(45deg, rgba(234, 176, 176, 1) 25%, transparent 25%, transparent 50%, rgba(234, 176, 176, 1) 50%, rgba(234, 176, 176, 1) 75%, transparent 75%, transparent);
+		background-image: -moz-linear-gradient(45deg, rgba(234, 176, 176, 1) 25%, transparent 25%, transparent 50%, rgba(234, 176, 176, 1) 50%, rgba(234, 176, 176, 1) 75%, transparent 75%, transparent);
+		background-image: linear-gradient(45deg, rgba(234, 176, 176, 1) 25%, transparent 25%, transparent 50%, rgba(234, 176, 176, 1) 50%, rgba(234, 176, 176, 1) 75%, transparent 75%, transparent);
+		-webkit-animation: barberpole 0.5s linear infinite;
+		-moz-animation: barberpole 0.5s linear infinite;
+		animation: barberpole 0.5s linear infinite;
+	}
+	 @-webkit-keyframes barberpole {
+	 from {
+	 background-position: 0 0;
+	}
+	to {
+		background-position: 60px 30px;
+	}
+	}
+	@-moz-keyframes barberpole {
+	 from {
+	 background-position: 0 0;
+	}
+	to {
+		background-position: 60px 30px;
+	}
+	}
+	@keyframes barberpole {
+	 from {
+	 background-position: 0 0;
+	}
+	to {
+		background-position: 60px 30px;
+	}
+	}
+	h1 {
+		text-align:center;
+	}
+	.main {
+		margin:10px auto;
+		text-align:center;
+		overflow:hidden;
+	}
+	.info {
+		color:#333;
+		text-align:center;
+		font-size:14px;
+	}
+	.info a {
+		color:#333;
+		text-decoration:none;
+	}
+	.title {background-color:rgba(0,0,0,0.56); width:100%; position:fixed; top:0; left:0; font-size:12px; font-family:Verdana, Geneva, sans-serif; z-index:99999;}
+	.title a {color:#FFF; text-decoration:none; line-height:24px; padding:0 10px; letter-spacing: 1px;}
+	.title_r {float:right;}
+	.title_l {float:left;}
+	.title a:hover {background:#000;}
+	</style>
+	<style>
+	body {padding-top:70px;}
+	</style>
+</head>
+<body>
+					<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+				      <div class="container">
+				        	<div class="navbar-header">
+				        		<a class="navbar-brand" href="#">
+				        			<img alt="duck" src="duck.png" width="50" height="45">
+				      			</a>
+				          	<a href="index.html" class="navbar-brand">Duck</a>
+				          	<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+				            	<span class="icon-bar"></span>
+				            	<span class="icon-bar"></span>
+				            	<span class="icon-bar"></span>
+				          	</button>
+				        	</div>
+				        <div class="navbar-collapse collapse" id="navbar-main">
+				          <ul class="nav navbar-nav">
+				            <li class="dropdown">
+				              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Themes <span class="caret"></span></a>
+				              <ul class="dropdown-menu" aria-labelledby="themes">
+				                <li><a href="index.html">Home</a></li>
+				                <li class="divider"></li>
+				                <li><a href="Profile.html">Profile</a></li>
+				                <li><a href="Skill.html">Skill</a></li>
+				                <li><a href="Albums.html">Albums</a></li>
+				              </ul>
+				            </li>
+				            <li>
+				              <a href="https://github.com/duck12212" target="_blank">Github</a>
+				            </li>
+				            <li>
+				              <a href="https://www.facebook.com/profile.php?id=100000152798163" target="_blank">FB</a>
+				            </li>
+				          </ul>
+
+				          <ul class="nav navbar-nav navbar-right">
+				            <li><a href="http://builtwithbootstrap.com/" target="_blank">My achievements</a></li>
+				            <li class="dropdown">
+				              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="Recommended sites">Recommended sites <span class="caret"></span></a>
+				              <ul class="dropdown-menu" aria-labelledby="Recommended sites">
+				                <li><a href="http://getbootstrap.com/css/" target="_blank">Bootstrap</a></li>
+				                <li class="divider"></li>
+				                <li><a href="http://www.fun698.com/vod-read-id-68545.html" target="_blank">the ORIGINALS</a></li>
+				                <li><a href="http://www.fun698.com/vod-read-id-68365.html" target="_blank">How To Get Away With Murder</a></li>
+				                <li><a href="http://www.fun698.com/vod-read-id-68336.html" target="_blank">S.H.I.E.L.D.</a></li>
+				                <li><a href="http://www.fun698.com/vod-read-id-68312.html" target="_blank">Scorpion</a></li>
+				              </ul>
+				            </li>
+				          </ul>
+				        </div>
+				      </div>
+				    </div>
+			<div class="container">
+				<div data-role="content" class="ui-content">
+					<blockquote>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+						<small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+					</blockquote>
+				</div>
+				<div data-role="footer">
+				    <h1>Footer Text</h1>
+				</div>
+			</div>
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http://bootswatch.com/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="http://bootswatch.com/assets/js/bootswatch.js"></script>
+</body>
+</html>
