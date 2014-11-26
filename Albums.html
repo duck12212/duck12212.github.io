@@ -1,168 +1,479 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> My Blog </title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="http://bootswatch.com/darkly/bootstrap.css" media="screen">
-	<link rel="stylesheet" href="http://bootswatch.com/assets/css/bootswatch.min.css">
-	<style>
-	body {
-		padding: 20px;
-		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	}
-	ul, li {
-		list-style:none;
-	}
-	.product {
-		width: 376px;
-		padding: 15px;
-		position: relative;
-		float: left;
-	}
-	.product > img {
-		display: block;
-		position: relative;
-		cursor:pointer;
-	}
-	.product:hover .product-hover, .product:active .product-hover {
-		opacity: 1;
-	}
-	.product-hover {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		opacity: 0;
-		-webkit-transition: opacity 0.3s ease;
-		-moz-transition: opacity 0.3s ease;
-		transition: opacity 0.3s ease;
-		background-size: 30px 30px;
-		background-image: -webkit-linear-gradient(45deg, rgba(234, 176, 176, 1) 25%, transparent 25%, transparent 50%, rgba(234, 176, 176, 1) 50%, rgba(234, 176, 176, 1) 75%, transparent 75%, transparent);
-		background-image: -moz-linear-gradient(45deg, rgba(234, 176, 176, 1) 25%, transparent 25%, transparent 50%, rgba(234, 176, 176, 1) 50%, rgba(234, 176, 176, 1) 75%, transparent 75%, transparent);
-		background-image: linear-gradient(45deg, rgba(234, 176, 176, 1) 25%, transparent 25%, transparent 50%, rgba(234, 176, 176, 1) 50%, rgba(234, 176, 176, 1) 75%, transparent 75%, transparent);
-		-webkit-animation: barberpole 0.5s linear infinite;
-		-moz-animation: barberpole 0.5s linear infinite;
-		animation: barberpole 0.5s linear infinite;
-	}
-	 @-webkit-keyframes barberpole {
-	 from {
-	 background-position: 0 0;
-	}
-	to {
-		background-position: 60px 30px;
-	}
-	}
-	@-moz-keyframes barberpole {
-	 from {
-	 background-position: 0 0;
-	}
-	to {
-		background-position: 60px 30px;
-	}
-	}
-	@keyframes barberpole {
-	 from {
-	 background-position: 0 0;
-	}
-	to {
-		background-position: 60px 30px;
-	}
-	}
-	h1 {
-		text-align:center;
-	}
-	.main {
-		margin:10px auto;
-		text-align:center;
-		overflow:hidden;
-	}
-	.info {
-		color:#333;
-		text-align:center;
-		font-size:14px;
-	}
-	.info a {
-		color:#333;
-		text-decoration:none;
-	}
-	.title {background-color:rgba(0,0,0,0.56); width:100%; position:fixed; top:0; left:0; font-size:12px; font-family:Verdana, Geneva, sans-serif; z-index:99999;}
-	.title a {color:#FFF; text-decoration:none; line-height:24px; padding:0 10px; letter-spacing: 1px;}
-	.title_r {float:right;}
-	.title_l {float:left;}
-	.title a:hover {background:#000;}
-	</style>
-	<style>
-	body {padding-top:70px;}
-	</style>
-</head>
-<body>
-					<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-				      <div class="container">
-				        	<div class="navbar-header">
-				        		<a class="navbar-brand" href="#">
-				        			<img alt="duck" src="duck.png" width="50" height="45">
-				      			</a>
-				          	<a href="index.html" class="navbar-brand">Duck</a>
-				          	<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-				            	<span class="icon-bar"></span>
-				            	<span class="icon-bar"></span>
-				            	<span class="icon-bar"></span>
-				          	</button>
-				        	</div>
-				        <div class="navbar-collapse collapse" id="navbar-main">
-				          <ul class="nav navbar-nav">
-				            <li class="dropdown">
-				              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Themes <span class="caret"></span></a>
-				              <ul class="dropdown-menu" aria-labelledby="themes">
-				                <li><a href="index.html">Home</a></li>
-				                <li class="divider"></li>
-				                <li><a href="Profile.html">Profile</a></li>
-				                <li><a href="Skill.html">Skill</a></li>
-				                <li><a href="Albums.html">Albums</a></li>
-				              </ul>
-				            </li>
-				            <li>
-				              <a href="https://github.com/duck12212" target="_blank">Github</a>
-				            </li>
-				            <li>
-				              <a href="https://www.facebook.com/profile.php?id=100000152798163" target="_blank">FB</a>
-				            </li>
-				          </ul>
 
-				          <ul class="nav navbar-nav navbar-right">
-				            <li><a href="http://builtwithbootstrap.com/" target="_blank">My achievements</a></li>
-				            <li class="dropdown">
-				              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="Recommended sites">Recommended sites <span class="caret"></span></a>
-				              <ul class="dropdown-menu" aria-labelledby="Recommended sites">
-				                <li><a href="http://getbootstrap.com/css/" target="_blank">Bootstrap</a></li>
-				                <li class="divider"></li>
-				                <li><a href="http://www.fun698.com/vod-read-id-68545.html" target="_blank">the ORIGINALS</a></li>
-				                <li><a href="http://www.fun698.com/vod-read-id-68365.html" target="_blank">How To Get Away With Murder</a></li>
-				                <li><a href="http://www.fun698.com/vod-read-id-68336.html" target="_blank">S.H.I.E.L.D.</a></li>
-				                <li><a href="http://www.fun698.com/vod-read-id-68312.html" target="_blank">Scorpion</a></li>
-				              </ul>
-				            </li>
-				          </ul>
-				        </div>
-				      </div>
-				    </div>
-			<div class="container">
-				<div data-role="content" class="ui-content">
-					<blockquote>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-						<small>Someone famous in <cite title="Source Title">Source Title</cite></small>
-					</blockquote>
-				</div>
-				<div data-role="footer">
-				    <h1>Footer Text</h1>
-				</div>
-			</div>
-	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-	<script src="http://bootswatch.com/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script src="http://bootswatch.com/assets/js/bootswatch.js"></script>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>My Blog</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="acss/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="acss/agency.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="afont-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="page-top" class="index">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img alt="duck" src="img/duck.png" width="50" height="45">
+                    </a>
+                <a href="index.html" class="navbar-brand">Duck</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+              <ul class="nav navbar-nav">
+                        <li>
+                          <a href="Profile.html" >Profile</a>
+                        </li>
+                        <li>
+                          <a href="Albums.html" >Albums</a>
+                        </li>
+                        <li>
+                          <a href="Skill.html" >Skill</a>
+                        </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://builtwithbootstrap.com/" target="_blank">My achievements</a></li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="Recommended sites">Recommended sites <span class="caret"></span></a>
+                  <ul class="dropdown-menu" aria-labelledby="Recommended sites">
+                    <li><a href="http://getbootstrap.com/css/" target="_blank">Bootstrap</a></li>
+                    <li class="divider"></li>
+                    <li><a href="http://www.fun698.com/vod-read-id-68545.html" target="_blank">the ORIGINALS</a></li>
+                    <li><a href="http://www.fun698.com/vod-read-id-68365.html" target="_blank">How To Get Away With Murder</a></li>
+                    <li><a href="http://www.fun698.com/vod-read-id-68336.html" target="_blank">S.H.I.E.L.D.</a></li>
+                    <li><a href="http://www.fun698.com/vod-read-id-68312.html" target="_blank">Scorpion</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+
+                 <div class="col-sm-6 col-md-8 col-xs-12 col-lg-12" align="center">
+                                        <script type="text/javascript" src="js/jssor.js"></script>
+                                        <script type="text/javascript" src="js/jssor.slider.js"></script>
+                                        <script>
+                                           jssor_slider1_starter = function (containerId) {
+                                           var options = {
+                                              $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                                              $AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
+                                              $AutoPlayInterval: 0,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                                              $PauseOnHover: 4,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+                                              $ArrowKeyNavigation: true,                    //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                                              $SlideEasing: $JssorEasing$.$EaseLinear,          //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad
+                                              $SlideDuration: 2000,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                                              $MinDragOffsetToSlide: 7,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+                                              $SlideWidth: 140,                                   //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+                                            //$SlideHeight: 100,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+                                              $SlideSpacing: 0,                           //[Optional] Space between each slide in pixels, default value is 0
+                                              $DisplayPieces: 4,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                                              $ParkingPosition: 0,                              //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+                                              $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                                              $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+                                              $DragOrientation: 1                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+                                            };
+
+                                            var jssor_slider1 = new $JssorSlider$(containerId, options);
+
+                                          //responsive code begin
+                                          //you can remove responsive code if you don't want the slider scales while window resizes
+                                          function ScaleSlider() {
+                                              var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+                                              if (parentWidth)
+                                                  jssor_slider1.$ScaleWidth(Math.min(parentWidth, 1800));
+                                              else
+                                                  $Jssor$.$Delay(ScaleSlider, 30);
+                                          }
+
+                                            ScaleSlider();
+                                           $Jssor$.$AddEvent(window, "load", ScaleSlider);
+
+                                           $Jssor$.$AddEvent(window, "resize", $Jssor$.$WindowResizeFilter(window, ScaleSlider));
+                                            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+                                           //responsive code end
+                                        };
+                                      </script>
+                                <!-- Jssor Slider Begin -->
+                                <!-- You can move inline styles to css file or css block. -->
+                                <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width:500px; height: 150px; overflow: hidden ;">
+
+                                    <!-- Loading Screen -->
+                                    <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+                                        <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                                            background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
+                                        </div>
+                                        <div style="position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center;
+                                            top: 0px; left: 0px;width: 100%;height:100%;">
+                                        </div>
+                                    </div>
+
+                                    <!-- Slides Container -->
+                                    <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 700px; height: 150px; overflow: hidden;">
+                                        <div><img u="image" alt="c" src="img/p1.jpg" /></div>
+                                        <div><img u="image" alt="c++" src="img/p2.jpg" /></div>
+                                        <div><img u="image" alt="eclipse" src="img/p3.jpg" /></div>
+                                        <div ><img u="image" alt="html5" src="img/p4.jpg" /></div>
+                                        <div><img u="image" alt="arduino" src="img/p5.jpg" /></div>
+                                        <div><img u="image" alt="android" src="img/p6.jpg" /></div>
+                                        <div><img u="image" alt="leagueoflegends" src="img/p7.jpg" /></div>
+                                        <div><img u="image" alt="c" src="img/p8.jpg" /></div>
+                                        <div><img u="image" alt="c++" src="img/p9.jpg" /></div>
+                                        <div><img u="image" alt="eclipse" src="img/p10.jpg" /></div>
+                                        <div ><img u="image" alt="html5" src="img/p11.jpg" /></div>
+                                        <div><img u="image" alt="arduino" src="img/p12.jpg" /></div>
+                                        <div><img u="image" alt="android" src="img/p13.jpg" /></div>
+                                        <div><img u="image" alt="leagueoflegends" src="img/p14.jpg" /></div>
+                                        <div><img u="image" alt="c" src="img/p15.jpg" /></div>
+                                        <div><img u="image" alt="c++" src="img/p16.jpg" /></div>
+                                        <div><img u="image" alt="eclipse" src="img/p17.jpg" /></div>
+                                        <div ><img u="image" alt="html5" src="img/p18.jpg" /></div>
+                                        <div><img u="image" alt="arduino" src="img/p19.jpg" /></div>
+                                    </div>
+                                    <a style="display: none" href="http://www.jssor.com">image carousel</a>
+                                    <!-- Trigger -->
+                                    <script>
+                                        jssor_slider1_starter('slider1_container');
+                                    </script>
+                                </div>
+                                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/r1 (1).jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Round Icons</h4>
+                        <p class="text-muted">Graphic Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/r1 (2).jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Startup Framework</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/r1 (3).jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Treehouse</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/r1 (4).jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Golden</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/r1 (5).jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Escape</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/r1 (6).jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Dreams</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Your Website 2014</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="www.google.com.tw/" target="_blank"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100000152798163" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="https://github.com/duck12212" target="_blank"><i class="fa fa-github"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive" src="img/portfolio/roundicons-free.png" alt="">
+                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                            <p>
+                                <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
+                            <ul class="list-inline">
+                                <li>Date: July 2014</li>
+                                <li>Client: Round Icons</li>
+                                <li>Category: Graphic Design</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Heading</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
+                            <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
+                            <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
+                            <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
+                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
+                            <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
+                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
+                            <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
+                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="">
+                            <p>Dreams is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed with the Bootstrap framework in mind.</p>
+                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+
 </body>
+
 </html>

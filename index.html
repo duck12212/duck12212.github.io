@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://bootswatch.com/darkly/bootstrap.css" media="screen">
   <link rel="stylesheet" href="http://bootswatch.com/assets/css/bootswatch.min.css">
+  <link href="css/full-slider.css" rel="stylesheet">
+  <link href="css/freelancer.css" rel="stylesheet">
+  <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <style>
   body {
     padding: 20px;
@@ -96,7 +99,7 @@
   .title a:hover {background:#000;}
   </style>
   <style>
-  body {padding-top:70px;}
+  body {padding-top:120px;}
   </style>
 </head>
 <body>
@@ -104,7 +107,7 @@
       <div class="container">
           <div class="navbar-header">
             <a class="navbar-brand" href="#">
-              <img alt="duck" src="duck.png" width="50" height="45">
+              <img alt="duck" src="img/duck.png" width="50" height="45">
             </a>
             <a href="index.html" class="navbar-brand">Duck</a>
             <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
@@ -112,24 +115,17 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-          </div>
+        </div>
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav">
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Themes <span class="caret"></span></a>
-              <ul class="dropdown-menu" aria-labelledby="themes">
-                <li><a href="index.html">Home</a></li>
-                <li class="divider"></li>
-                <li><a href="Profile.html">Profile</a></li>
-                <li><a href="Skill.html">Skill</a></li>
-                <li><a href="Albums.html">Albums</a></li>
-              </ul>
+            <li>
+              <a href="Profile.html" >Profile</a>
             </li>
             <li>
-              <a href="https://github.com/duck12212" target="_blank">Github</a>
+              <a href="Albums.html" >Albums</a>
             </li>
             <li>
-              <a href="https://www.facebook.com/profile.php?id=100000152798163" target="_blank">FB</a>
+              <a href="Skill.html" >Skill</a>
             </li>
           </ul>
 
@@ -150,62 +146,84 @@
         </div>
       </div>
   </div>
+  <header id="myCarousel" class="carousel slide">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for Slides -->
+      <div class="carousel-inner">
+          <div class="item active">
+              <!-- Set the first background image using inline CSS below. -->
+              <div class="fill" style="background-image:url('img/header-bg.jpg');"></div>
+              <div class="carousel-caption">
+                  <h2>Caption 1</h2>
+              </div>
+          </div>
+          <div class="item">
+              <!-- Set the second background image using inline CSS below. -->
+              <div class="fill" style="background-image:url('img/IMAG0041.jpg');"></div>
+              <div class="carousel-caption">
+                  <h2>Caption 2</h2>
+              </div>
+          </div>
+          <div class="item">
+              <!-- Set the third background image using inline CSS below. -->
+              <div class="fill" style="background-image:url('img/IMAG0038.jpg');"></div>
+              <div class="carousel-caption">
+                  <h2>Caption 3</h2>
+              </div>
+          </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="icon-prev"></span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="icon-next"></span>
+      </a>
+
+  </header>
   <div class="container">
-    <div data-role="content" class="ui-content">
-      <div align="center">
-        <h1 class="text-center"><span class="glyphicon glyphicon-screenshot"></span><s><strong>Welcome To My Blog !</strong></s></h1>
-      </div>
-      <div class="row">
-        <div class="col-lg-5 col-md-5 col-sm-12">
-        <!--<div class="main">-->
-          <ul>
-          <a href="Albums.html">
-          <li class="product">
-            <div class="product-hover"></div>
-              <img src="MY.jpg" class="img-responsive " alt="Responsive image" >
-          </li>
-          </a>
-          </ul>
-        <!--</div>-->
-        </div>
-        <div class="col-lg-7 col-md-7 col-sm-12">
-          <a href="Profile.html"><h1><p align="left">BlackDuck</p></h1></a>
-          <blockquote>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-              <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
-          </blockquote>
-        </div>
-      </div>
+    <div class="footer-col col-md-12 col-lg-12">
+        <h3>Connect Me</h3>
+        <ul class="list-inline">
+            <li>
+                <a href="https://www.facebook.com/profile.php?id=100000152798163" class="btn-social btn-outline" target="_blank"><i class="fa fa-fw fa-facebook" ></i></a>
+            </li>
+            <li>
+                <a href="https://www.google.com.tw/" class="btn-social btn-outline" target="_blank"><i class="fa fa-fw fa-google-plus"></i></a>
+            </li>
+            <li>
+                <a href="https://github.com/duck12212" class="btn-social btn-outline" target="_blank"><i class="fa fa-fw fa-github"></i></a>
+            </li>
+            <li>
+                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+            </li>
+            <li>
+                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+            </li>
+        </ul>
     </div>
-  </div>
-    <!--<div class="table-responsive">
-    <div class="panel panel-default">
-      <table class="table  Hover rows Bordered table ">
-        <tr>
-          <th class="danger">姓名</th>
-          <th class="danger">學號</th>
-          <th class="danger">系級</th>
-        </tr>
-        <tr>
-          <td class="success">duck</td>
-          <td class="warning">4101056020</td>
-          <td class="info">CSE 3</td>
-        </tr>
-        <tr>
-          <td class="success">pomelo</td>
-          <td class="warning">4101056030</td>
-          <td class="info">CSE 3</td>
-        </tr>
-        <tr>
-          <td class="success">jerry</td>
-          <td class="warning">4101056019</td>
-          <td class="info">CSE 3</td>
-        </tr>
-      </table>
+    <div class="row">
+    </div>
+      <div class="col-lg-12 text-center">
+      <h2 class="brand-before">
+          <small>Welcome to</small>
+      </h2>
+      <h3 class="brand-name">My Blog</h3>
+      <hr class="tagline-divider">
+      <h2>
+          <small>By
+              <strong>B.Duck</strong>
+          </small>
+      </h2>
       </div>
-    </div>-->
-    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
+  </div>
   <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
   <script src="http://bootswatch.com/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="http://bootswatch.com/assets/js/bootswatch.js"></script>

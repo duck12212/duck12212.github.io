@@ -8,6 +8,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="http://bootswatch.com/darkly/bootstrap.css" media="screen">
 	<link rel="stylesheet" href="http://bootswatch.com/assets/css/bootswatch.min.css">
+	<link href="css/freelancer.css" rel="stylesheet">
+	<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<style>
 	body {
 		padding: 20px;
@@ -96,7 +98,7 @@
 	.title a:hover {background:#000;}
 	</style>
 	<style>
-	body {padding-top:70px;}
+	body {padding-top:120px;}
 	</style>
 </head>
 <body>
@@ -104,7 +106,7 @@
 				      <div class="container">
 				        	<div class="navbar-header">
 				        		<a class="navbar-brand" href="#">
-				        			<img alt="duck" src="duck.png" width="50" height="45">
+				        			<img alt="duck" src="img/duck.png" width="50" height="45">
 				      			</a>
 				          	<a href="index.html" class="navbar-brand">Duck</a>
 				          	<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
@@ -115,22 +117,15 @@
 				        	</div>
 				        <div class="navbar-collapse collapse" id="navbar-main">
 				          <ul class="nav navbar-nav">
-				            <li class="dropdown">
-				              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Themes <span class="caret"></span></a>
-				              <ul class="dropdown-menu" aria-labelledby="themes">
-				                <li><a href="index.html">Home</a></li>
-				                <li class="divider"></li>
-				                <li><a href="Profile.html">Profile</a></li>
-				                <li><a href="Skill.html">Skill</a></li>
-				                <li><a href="Albums.html">Albums</a></li>
-				              </ul>
-				            </li>
-				            <li>
-				              <a href="https://github.com/duck12212" target="_blank">Github</a>
-				            </li>
-				            <li>
-				              <a href="https://www.facebook.com/profile.php?id=100000152798163" target="_blank">FB</a>
-				            </li>
+				                   <li>
+				                     <a href="Profile.html" >Profile</a>
+				                   </li>
+				                   <li>
+				                     <a href="Albums.html" >Albums</a>
+				                   </li>
+				                   <li>
+				                     <a href="Skill.html" >Skill</a>
+				                   </li>
 				          </ul>
 
 				          <ul class="nav navbar-nav navbar-right">
@@ -176,7 +171,7 @@
 				    <a href="Albums.html">
 				    <li class="product">
 				      <div class="product-hover"></div>
-				        <img src="MY.jpg" class="img-responsive " alt="Responsive image" >
+				        <img src="img/MY.jpg" class="img-responsive " alt="Responsive image" >
 				    </li>
 				    </a>
 				    </ul>
@@ -200,62 +195,26 @@
 				  <div class="tab-pane fade" id="Educationalbackground">
 				  	<div class="row">
 				  		<div class="col-lg-6 col-md-6 col-sm-12">
-							<div class="panel panel-primary">
-							  <div class="panel-heading">
-							    <h3 class="panel-title">Elementary School</h3>
-							  </div>
-							  <div class="panel-body">
-							    <a href="http://www.jyes.ntpc.edu.tw/" target="_blank"><font face="DFKai-sb" size="5">新北市三重區正義國民小學</font></a>
-							    <!--<p align="right"><font face="DFKai-sb">個人資訊</font></p>-->
-							  </div>
-							</div>
-
-							<div class="panel panel-success">
-							  <div class="panel-heading">
-							    <h3 class="panel-title">Junior High School</h3>
-							  </div>
-							  <div class="panel-body">
-							    <a href="http://www.shjh.ntpc.edu.tw/" target="_blank"><font face="DFKai-sb" size="5">新北市立三和國民中學</font></a>
-							  </div>
-							</div>
-
-							<div class="panel panel-warning">
-							  <div class="panel-heading">
-							    <h3 class="panel-title">Senior High School</h3>
-							  </div>
-							  <div class="panel-body">
-							    <a href="http://saturn.cksh.tp.edu.tw/" target="_blank"><font face="DFKai-sb" size="5">臺北市立成功高級中學</font></a>
-							  </div>
+							<div class="list-group">
+								<h4 class="list-group-item-heading">Elementary School</h4>
+							  <a href="http://www.jyes.ntpc.edu.tw/" class="list-group-item" target="_blank">
+							    <p class="list-group-item-text"><font face="DFKai-sb">新北市三重區正義國民小學</font></p>
+							  </a>
+							  	<h4 class="list-group-item-heading">Junior High School</h4>
+							  <a href="http://www.shjh.ntpc.edu.tw/" target="_blank" class="list-group-item">
+							    <p class="list-group-item-text"><font face="DFKai-sb">新北市立三和國民中學</font></p>
+							  </a>
+							  	<h4 class="list-group-item-heading">Senior High School</h4>
+							  <a href="http://saturn.cksh.tp.edu.tw/" target="_blank" class="list-group-item">
+							    <p class="list-group-item-text"><font face="DFKai-sb">臺北市立成功高級中學</font></p>
+							  </a>
+							  	<h4 class="list-group-item-heading">College</h4>
+							  <a href="http://www.nchu.edu.tw/academic.php?mid=50&uid=5" target="_blank" class="list-group-item">
+							    <p class="list-group-item-text"><font face="DFKai-sb">國立中興大學</font></p>
+							  </a>
 							</div>
 				  		</div>
 				  		<div class="col-lg-6 col-md-6 col-sm-12">
-							<div class="panel panel-primary">
-							  <div class="panel-heading">
-							    <h3 class="panel-title">College</h3>
-							  </div>
-							  <div class="panel-body">
-							    <a href="http://www.nchu.edu.tw/academic.php?mid=50&uid=5" target="_blank"><font face="DFKai-sb" size="5">國立中興大學</font></a>
-							  </div>
-							</div>
-
-							<div class="panel panel-success">
-							  <div class="panel-heading">
-							    <h3 class="panel-title">Panel success</h3>
-							  </div>
-							  <div class="panel-body">
-							    Panel content
-							  </div>
-							</div>
-
-							<div class="panel panel-warning">
-							  <div class="panel-heading">
-							    <h3 class="panel-title">Panel warning</h3>
-							  </div>
-							  <div class="panel-body">
-							    Panel content
-							  </div>
-							</div>
-
 				  		</div>
 				  	</div>
 				  </div>
@@ -306,17 +265,46 @@
 					      <td>Column content</td>
 					      <td>Column content</td>
 					    </tr>
-					    <!--<tr class="info">
-					      <td>3</td>
-					      <td>Column content</td>
-					      <td>Column content</td>
-					      <td>Column content</td>
-					    </tr>-->
 					  </tbody>
 					</table>
 				  </div>
 				  <div class="tab-pane fade active in" id="profile">
-				    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
+				  	<div class="row">
+				  	<div class="col-lg-12 col-md-12 col-sm-12">
+				  	<h2><p align="left"><font face="DFKai-sb">個人簡述</font></p></h2>
+				    <blockquote>
+				      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+				      <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+				    </blockquote>
+				    </div>
+				   	<div class="col-lg-12 col-md-12 col-sm-12">
+				   	<h2><p align="right"><font face="DFKai-sb">興趣</font></p></h2>
+				     <blockquote class="pull-right">
+				       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+				       <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+				     </blockquote>
+				     </div>
+				     </div>
+				     <div class="footer-col col-md-12 col-lg-12">
+				         <h3>Connect Me</h3>
+				         <ul class="list-inline">
+				             <li>
+				                 <a href="https://www.facebook.com/profile.php?id=100000152798163" class="btn-social btn-outline" target="_blank"><i class="fa fa-fw fa-facebook" ></i></a>
+				             </li>
+				             <li>
+				                 <a href="https://www.google.com.tw/" class="btn-social btn-outline" target="_blank"><i class="fa fa-fw fa-google-plus"></i></a>
+				             </li>
+				             <li>
+				                 <a href="https://github.com/duck12212" class="btn-social btn-outline" target="_blank"><i class="fa fa-fw fa-github"></i></a>
+				             </li>
+				             <li>
+				                 <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+				             </li>
+				             <li>
+				                 <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+				             </li>
+				         </ul>
+				     </div>
 				  </div>
 				  <div class="tab-pane fade" id="dropdown1">
 				    <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
