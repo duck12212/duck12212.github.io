@@ -9,16 +9,18 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Duck website</title>
+    <title>BlackDuck</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/agency.css" rel="stylesheet">
+    <link href="css/landing-page.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -56,13 +58,19 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Skills</a>
+                        <a class="page-scroll" href="#me">About Me</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Skill</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#portfolio">portfolio</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#awards">Award</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Life</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#team">Team</a>
@@ -76,18 +84,69 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
     <!-- Header -->
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Welcome To My Website!</div>
-                <div class="intro-heading">It's Nice To Meet You</div>
-                <a href="#services" class="page-scroll btn btn-xl">More</a>
+                <div class="intro-heading"><span><em>Zong-Cheng Shih</em></span></div>
+                <div class="intro-lead-in">Welcome To My Website!It's Nice To Meet You!</div>
+                <!-- <a href="#services" class="page-scroll btn btn-xl">learn more about me</a> -->
+                <a href="#me" class="page-scroll myButton">learn more about me</a>
             </div>
         </div>
     </header>
 
+    <!-- me Section -->
+    <section id="me">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About me</h2>
+                </div>
+            </div>
+            <div class="extra-info">
+                <div class="container">
+                    <ul class="row">
+                        <li class="work-type col-md-3 col-sm-3 col-xs-6">
+                            <span class="head">Study As</span>
+                            <span><a target="_blank" href="http://web.cs.nthu.edu.tw/bin/home.php">清華大學 資訊工程學系碩士班</a></span>
+                        </li>
+                        <li class="birthdate col-md-3 col-sm-3 col-xs-6">
+                            <span class="head">Lab</span>
+                            <span><a target="_blank" href="http://vc.cs.nthu.edu.tw/home/">視訊通訊實驗室</a> 資電館831室</span>
+                        </li>
+                        <li class="phone-no col-md-3 col-sm-3 col-xs-6">
+                            <span class="head">Contact</span>
+                            <span>097518017</span>
+                        </li>
+                        <li class="email col-md-3 col-sm-3 col-xs-6">
+                            <span class="head">Email Address</span>
+                            <span>duck12212@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h3 class="section-subheading text-muted">Self-trust is the first secret of success</h3>
+                    <p class="lead">Hi, my name is Shih Zong-Cheng.</p>
+                    <ul class="list-inline social-buttons">
+                        <li><p align="center"><a href="https://www.facebook.com/profile.php?id=100000152798163"><i class="fa fa-facebook"></i></a></p></li>
+                        <li><p align="center"><a href="https://github.com/duck12212"><i class="fa fa-fw fa-github"></i></a></p></li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <div class="team-member">
+                        <img src="img/team/duck.jpg" class="img-responsive img-circle" alt="" width="271" height="271">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <p align="center"><a href="#services" class="page-scroll myButton">My skills</a></p>
+    </section>
     <!-- Services Section -->
     <section id="services">
         <div class="container">
@@ -124,6 +183,9 @@
                 </div>
             </div>
         </div>
+        <br>
+        <br>
+        <p align="center"><a href="#portfolio" class="page-scroll myButton">My portfolio</a></p>
     </section>
 
     <!-- Portfolio Grid Section -->
@@ -157,27 +219,27 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/ic_launcher.png" class="img-responsive" alt="">
+                        <p align="center"><img src="img/portfolio/ic_launcher.png" class="img-responsive" alt=""></p>
                     </a>
                     <div class="portfolio-caption">
                         <h4>斷金計畫</h4>
                         <p class="text-muted">推薦系統</p>
                     </div>
                 </div>
-                <!-- <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
+                        <p align="center"><img src="img/portfolio/povon_plan.png" class="img-responsive" alt=""></p>
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Treehouse</h4>
-                        <p class="text-muted">Website Design</p>
+                        <h4>植物即時疫情監測電子化平台</h4>
+                        <p class="text-muted">微氣候感測器開發</p>
                     </div>
-                </div> -->
+                </div>
                 <!-- <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -222,15 +284,51 @@
                 </div> -->
             </div>
         </div>
+        <p align="center"><a href="#awards" class="page-scroll myButton">My Awards</a></p>
     </section>
 
+    <!-- About Section -->
+    <section id="awards">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Awards</h2>
+                </div>
+            </div>
+            <div class="content-section-a">
+                <div class="container">
+                    <div class="row">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <ul>
+                            <li/><h4>2015 列名中興大學頂尖大學創新科技記者會簡報成果<h5>
+                            <li/><h4>2015 中興大學資訊科學與工程學系專題決賽 第二名<h5>
+                            <li/><h4>2015 全國大專院校軟體創作競賽 雲端網際服務與其他應用組 佳作獲獎金 5000元<h5>
+                            <li/><h4>2015 全國能源科技 創意實作競賽 入圍獎 獲獎金 8000元<h5>
+                            <li/><h4>2015 T-Combinator創新創業孵化器進行專題成果展示<h5>
+                            <li/><h4>2015 前往上海社科院與EMBA學員 進行專題成果展示 (補助三萬元)<h5>
+                            <li/><h4>2015 台中久允工具機實業進行專題成果說明 並洽談技術轉移與後續發展之可能性<h5>
+                            <li/><h4>2015 中興大學校內展示 並獲得校長與總務長肯定，由學校補助經費，擴大佈建於中興大學理學大樓1-10樓樓層<h5>
+                            <li/><h4>2014 經濟部工業局自行車研究發展中心app開發競賽 銀牌獎 (Asus ZenPhone一具)<h5>
+                            <li/><h4>2014 CPE 成績證明  三題 比例(112/1818=6.2%)<h5>
+                            <li/><h4>2014 ITSA線上程式設計大賽 榮獲多次績優團隊<h5>
+                            <li/><h4>2015 第四屆ITSA盃程式設計桂冠挑戰大賽闖關組  佳作<h5>
+                            <li/><h4>2014 GS1/EPCglobal  RFID初級認證<h5>
+                        </ul>
+                    </div>
+                </div>
+            <!-- /.container -->
+            </div>
+        </div>
+        <p align="center"><a href="#about" class="page-scroll myButton">My life</a></p>
+    </section>
     <!-- About Section -->
     <section id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About</h2>
-                    <h3 class="section-subheading text-muted">Self-trust is the first secret of success.</h3>
+                    <h2 class="section-heading">Life</h2>
+                    <h3 class="section-subheading text-muted">Live and learn.</h3>
                 </div>
             </div>
             <div class="row">
@@ -238,7 +336,7 @@
                     <ul class="timeline">
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                                <img class="img-circle img-responsive" src="img/about/1.png" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -246,13 +344,13 @@
                                     <h4 class="subheading">I was born in New Taipei City.</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">My life beginning!</p>
+                                    <p class="text-muted">My life began!</p>
                                 </div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                                <p align="center" valign="center"><img class="img-circle img-responsive" src="img/about/2.jpg" alt=""></p>
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -266,7 +364,7 @@
                         </li>
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/3.png" alt="">
+                                <p align="center" valign="center"><img class="img-circle img-responsive" src="img/about/3.png" alt=""></p>
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -274,19 +372,7 @@
                                     <h4 class="subheading">National Chung Hsing University</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <h5 align="left">專題成果-列名2015年中興大學頂尖大學創新科技記者會簡報成果</h3>
-                                    <p align="left" class="text-muted">·榮獲 中興大學資訊科學與工程學系專題決賽 第二名 <br>
-                                    ·榮獲 2015全國大專院校軟體創作競賽 雲端網際服務與其他應用組 佳作獲獎金 5000元 <br>
-                                    ·榮獲 2015全國能源科技 創意實作競賽 入圍獎 獲獎金 8000元 <br>
-                                    ·受邀 T-Combinator創新創業孵化器進行專題成果展示 <br>
-                                    ·受邀 前往上海社科院與EMBA學員 進行專題成果展示 (補助三萬元) <br>
-                                    ·受邀 台中久允工具機實業進行專題成果說明 並洽談技術轉移與後續發展之可能性 <br>
-                                    ·受邀 中興大學校內展示 並獲得校長與總務長肯定，由學校補助經費，擴大佈建於中興大學理學大樓1-10樓樓層</p>
-                                    <h5 align="left">程式競賽&證照</h3>
-                                    <p align="left" class="text-muted">·CPE 成績證明  三題 比例(112/1818=6.2%) <br>
-                                    ·ITSA線上程式設計大賽 榮獲多次績優團隊 <br>
-                                    ·第四屆ITSA盃程式設計桂冠挑戰大賽闖關組  佳作 <br>
-                                    ·GS1/EPCglobal  RFID初級認證</p>
+                                    <p class="text-muted">資訊科學與工程學系</p>
                                 </div>
                             </div>
                         </li>
@@ -297,10 +383,10 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>September 2016</h4>
-                                    <h4 class="subheading">NTHU Department of Computer Science</h4>
+                                    <h4 class="subheading">NTHU</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">continuing....</p>
+                                    <p class="text-muted">Department of Computer Science</p>
                                 </div>
                             </div>
                         </li>
@@ -315,6 +401,9 @@
                 </div>
             </div>
         </div>
+        <br>
+        <br>
+        <p align="center"><a href="#team" class="page-scroll myButton">My team</a></p>
     </section>
 
     <!-- Team Section -->
@@ -327,7 +416,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-sm-4">
                     <div class="team-member">
                         <img src="img/team/professor.jpg" class="img-responsive img-circle" alt="" width="271" height="271">
                         <h3><font face="微軟正黑體">范耀中教授</h3>
@@ -340,18 +429,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-3">
-                    <div class="team-member">
-                        <img src="img/team/duck.jpg" class="img-responsive img-circle" alt="" width="271" height="271">
-                        <h3><font face="微軟正黑體">施宗呈</h3>
-                        <p class="text-muted">Project Designer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="https://www.facebook.com/profile.php?id=100000152798163"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="https://github.com/duck12212"><i class="fa fa-fw fa-github"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-3">
+                <div class="col-sm-4">
                     <div class="team-member">
                         <img src="img/team/pomelo.jpg" class="img-responsive img-circle" alt="" width="271" height="271">
                         <h3><font face="微軟正黑體">何青祐</h3>
@@ -362,7 +440,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-4">
                     <div class="team-member">
                         <img src="img/team/lch.jpg" class="img-responsive img-circle" alt="" width="271" height="271">
                         <h3><font face="微軟正黑體">廖志豪</h3>
@@ -375,6 +453,7 @@
                 </div>
             </div>
         </div>
+        <p align="center"><a href="#page-top" class="page-scroll myButton">Top</a></p>
     </section>
 
     <!-- Clients Aside -->
@@ -498,8 +577,10 @@
                             <h2>Povon</h2>
                             <p class="item-intro text-muted">You cannot improve what you cannot measure.</p>
                             <p>我們的系統取名為Povon，為世界語中Power的意思。如今世界能源短缺，除了尋找未來可替代的能源之外，人們還必須設法節省能源，而其中最基礎的一步即為量測，才能知道在哪些地方有浪費能源的情況發生。</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/Architecture.png" alt="">
+                            <p><center><iframe width="760" height="515" src="https://www.youtube.com/embed/OQkjPI4mjZs" frameborder="0" allowfullscreen></iframe></center></p>
+                            <p>( <u><a href="https://www.youtube.com/watch?v=OQkjPI4mjZs">see the introduction video</a></u> )</p>
                             <p>Povon是一個雲端電力監控平台，配合Povon專屬的硬體設備，結合開放式硬體、電力通訊、雲端服務與資料分析技術，打造一低建構成本之雲端電力監控系統，供校園環境快速佈建電力監控與用電分析機制。透過完整的資料收集、運算，將有效達到節能、監控等資訊呈現給使用者。</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/Architecture.png" alt="">
                             <p>
                                 <strong>Welcome To Our Website!</strong>You can understand what we are doing by <a href="http://140.120.13.89/electric_measure/">Pvon.com</a>, thanks for your coming.</p>
                             <ul class="list-inline">
@@ -561,11 +642,17 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
-                            <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
+                            <h2>植物即時疫情監測電子化平台</h2>
+                            <p class="item-intro text-muted">微氣候感測器開發</p>
+                            <p>於本工作項目中，我們著眼於微氣候感測器開發，短期目標為開發一低成本之無線微氣候感測器，可供感測田間溫度與濕度，並利用通訊模組將所感測之溫濕度觀測值，存放於行動裝置。我們預期架構如圖一中所示。</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/plan.png" alt="">
+                            <p>
+                                <strong>Welcome To Our Website!</strong>You can understand what we are doing by <a href="http://140.120.13.89/agriculture/index.html">Pvon.com</a>, thanks for your coming.</p>
+                            <ul class="list-inline">
+                                <li>Date: July 2014 ~ July 2016</li>
+                                <li>Members: 范耀中教授、施宗呈、何青祐、廖志豪</li>
+                                <li>Co-organizer: National Chung Hsing University</li>
+                            </ul>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
