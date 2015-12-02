@@ -43,13 +43,12 @@ switch(query.lang){
 /*---------------------------
   Get and append data
  ---------------------------*/
-// var data, dataGet = true;
-// $.get( "./data.json", function(json) {
-//   data = json;
-//   $('[data-toggle="tooltip"]').tooltip();
-// }).fail(function(){
-//   dataGet = false;
-// });
+var data, dataGet = true;
+$.get( "./data.json", function(json) {
+  data = json;
+}).fail(function(){
+  dataGet = false;
+});
 
 /*---------------------------
   Transition
