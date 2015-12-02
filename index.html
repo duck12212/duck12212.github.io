@@ -25,6 +25,13 @@
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <!--timeline-->
+    <link rel="stylesheet" href="./css/timeline/flat.css">
+    <link rel="stylesheet" href="./css/timeline/style.css">
+    <link rel="stylesheet" href="./css/timeline/lightbox.css">
+    <link rel="stylesheet" href="./css/timeline/jquery.mCustomScrollbar.css">
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -70,7 +77,7 @@
                         <a class="page-scroll" href="#awards">Award</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">Life</a>
+                        <a class="page-scroll" href="#timeline">timeline</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#team">Team</a>
@@ -85,25 +92,25 @@
         <!-- /.container-fluid -->
     </nav>
     <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-heading"><span><em>Zong-Cheng Shih</em></span></div>
-                <div class="intro-lead-in">Welcome To My Website!It's Nice To Meet You!</div>
-                <!-- <a href="#services" class="page-scroll btn btn-xl">learn more about me</a> -->
-                <a href="#me" class="page-scroll myButton">learn more about me</a>
+    <div class="home" id="home">
+        <header>
+            <div class="container">
+                <div class="intro-text">
+                    <div class="intro-heading"><span><em>Zong-Cheng Shih</em></span></div>
+                    <div class="intro-lead-in">Welcome To My Website!It's Nice To Meet You!</div>
+                    <p align="center"><a href="#me" class="page-scroll myButton">learn more about me</a></p>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
+    </div>
 
     <!-- me Section -->
     <section id="me">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About me</h2>
-                </div>
-            </div>
+            <header class="title">
+                <h2>About Me</h2>
+                <h3><span>/</span>Self-trust is the first secret of success</h3>
+            </header>
             <div class="extra-info">
                 <div class="container">
                     <ul class="row">
@@ -130,7 +137,6 @@
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h3 class="section-subheading text-muted">Self-trust is the first secret of success</h3>
                     <p class="lead">Hi, my name is Shih Zong-Cheng.</p>
                     <ul class="list-inline social-buttons">
                         <li><p align="center"><a href="https://www.facebook.com/profile.php?id=100000152798163"><i class="fa fa-facebook"></i></a></p></li>
@@ -145,17 +151,21 @@
             </div>
 
         </div>
-        <p align="center"><a href="#services" class="page-scroll myButton">My skills</a></p>
+        <p align="center" style="font-size:30px"><a href="#services" class="page-scroll text-muted">&darr; My skills</a></p>
     </section>
     <!-- Services Section -->
     <section id="services">
         <div class="container">
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Skills</h2>
                     <h3 class="section-subheading text-muted">An uncut gem goes not sparkle.</h3>
                 </div>
-            </div>
+            </div> -->
+            <header class="title">
+                <h2>Skills</h2>
+                <h3><span>/</span>An uncut gem goes not sparkle.</h3>
+            </header>
             <div class="row text-center">
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -185,18 +195,23 @@
         </div>
         <br>
         <br>
-        <p align="center"><a href="#portfolio" class="page-scroll myButton">My portfolio</a></p>
+        <!-- <p align="center"><a href="#portfolio" class="page-scroll myButton">My portfolio</a></p> -->
+        <p align="center" style="font-size:30px"><a href="#portfolio" class="page-scroll text-muted">&darr; My portfolio</a></p>
     </section>
 
     <!-- Portfolio Grid Section -->
     <section id="portfolio" class="bg-light-gray">
         <div class="container">
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Portfolio</h2>
                     <h3 class="section-subheading text-muted">Rome was not built in a day.</h3>
                 </div>
-            </div>
+            </div> -->
+            <header class="title">
+                <h2>Portfolio</h2>
+                <h3><span>/</span>Rome was not built in a day.</h3>
+            </header>
             <div class="row">
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
@@ -284,17 +299,22 @@
                 </div> -->
             </div>
         </div>
-        <p align="center"><a href="#awards" class="page-scroll myButton">My Awards</a></p>
+        <!-- <p align="center"><a href="#awards" class="page-scroll myButton">My Awards</a></p> -->
+        <p align="center" style="font-size:30px"><a href="#awards" class="page-scroll text-muted">&darr; My Awards</a></p>
     </section>
 
     <!-- About Section -->
     <section id="awards">
         <div class="container">
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Awards</h2>
                 </div>
-            </div>
+            </div> -->
+            <header class="title">
+                <h2>Awards</h2>
+                <h3><span>/</span>Live and learn.</h3>
+            </header>
             <div class="content-section-a">
                 <div class="container">
                     <div class="row">
@@ -320,18 +340,29 @@
             <!-- /.container -->
             </div>
         </div>
-        <p align="center"><a href="#about" class="page-scroll myButton">My life</a></p>
+        <!-- <p align="center"><a href="#about" class="page-scroll myButton">My life</a></p> -->
+        <p align="center" style="font-size:30px"><a href="#timeline" class="page-scroll text-muted">&darr; My life</a></p>
     </section>
     <!-- About Section -->
-    <section id="about">
+    <section id="timeline">
         <div class="container">
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Life</h2>
                     <h3 class="section-subheading text-muted">Live and learn.</h3>
                 </div>
+            </div> -->
+            <header class="title">
+                <h2>Life</h2>
+                <h3><span>/</span>Live and learn.</h3>
+            </header>
+            <div class="timelineLoader">
+                <img src="./img/loadingAnimation.gif" />
             </div>
-            <div class="row">
+            <!-- BEGIN TIMELINE -->
+            <div class="timelineFlat timelineFlatBlog tl2"></div>
+            <!-- /END TIMELINE -->
+            <!-- <div class="row">
                 <div class="col-lg-12">
                     <ul class="timeline">
                         <li>
@@ -399,22 +430,27 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
         </div>
         <br>
         <br>
-        <p align="center"><a href="#team" class="page-scroll myButton">My team</a></p>
+        <!-- <p align="center"><a href="#team" class="page-scroll myButton">My team</a></p> -->
+        <p align="center" style="font-size:30px"><a href="#team" class="page-scroll text-muted">&darr; My team</a></p>
     </section>
 
     <!-- Team Section -->
     <section id="team" class="bg-light-gray">
         <div class="container">
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Our Amazing Team</h2>
                     <h3 class="section-subheading text-muted">Two heads are better than one.</h3>
                 </div>
-            </div>
+            </div> -->
+            <header class="title">
+                <h2>Our Amazing Team</h2>
+                <h3><span>/</span>Two heads are better than one.</h3>
+            </header>
             <div class="row">
                 <div class="col-sm-4">
                     <div class="team-member">
@@ -453,7 +489,8 @@
                 </div>
             </div>
         </div>
-        <p align="center"><a href="#page-top" class="page-scroll myButton">Top</a></p>
+        <!-- <p align="center"><a href="#page-top" class="page-scroll myButton">Top</a></p> -->
+        <p align="center" style="font-size:30px"><a href="#page-top" class="page-scroll text-muted">Top</a></p>
     </section>
 
     <!-- Clients Aside -->
@@ -742,11 +779,16 @@
         </div>
     </div>
 
+    <!-- <div class="parallax parallax_base">
+        <div class="full-page" id="bg1"></div>
+    </div> -->
+
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <!--  <script src="js/jquery.js"></script> -->
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
@@ -754,11 +796,14 @@
     <script src="js/cbpAnimatedHeader.js"></script>
 
     <!-- Contact Form JavaScript -->
+    <!-- <script src="js/jquery.js"></script> -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
+
+    <script src="./js/page.js"></script>
 
 </body>
 

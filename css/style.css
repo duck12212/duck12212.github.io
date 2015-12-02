@@ -40,7 +40,7 @@
 /** Extra Info **/
 .extra-info {
   box-shadow: 0 1px 1px rgba(175, 170, 180, 0.2);
-  padding-top: 40px;
+  padding-top: 0px;
   padding-bottom: 24px;
   margin-bottom: 40px;
 }
@@ -70,4 +70,56 @@
   text-transform: uppercase;
   font-weight: 800;
 }
-
+.title {
+  margin-bottom: 40px;
+}
+.title h2{
+  display: inline-block;
+  color: #151d2a;
+}
+.title h3 {
+  font-size:16px;font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-transform:none;
+  font-style:italic;font-weight:400;
+  display: inline-block;
+  color:#777;
+}
+.title h2 {
+  font-weight: 800;
+  font-size: 36px;
+  border-bottom: 1px solid #b3b3b3;
+  padding-bottom: 10px;
+  margin-right: 10px;
+  position: relative;
+}
+.title h2:before {
+  content: "";
+  position: absolute;
+  width: 54px;
+  height: 2px;
+  background: #151d2a;
+  bottom: -1px;
+  right: 0;
+}
+.title h3 > span {
+  font-size: 30px;
+  font-weight: 800;
+  margin-right: 10px;
+}
+.title h3 {
+  font-size: 22px;
+ }
+.title h3 {
+  font-size: 18px;
+}
+.home {
+  background: #151d2a;
+  background:  url("../img/header-bg.jpg") no-repeat;
+  /** For IE9 Only **/
+  /*background: linear-gradient(0deg, rgba(21, 29, 42, 0.95) 0%, rgba(21, 29, 42, 0.95) 100%), url("../img/header-bg.jpg") no-repeat;*/
+  color: #fff;
+  border: 1px solid transparent;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+}
