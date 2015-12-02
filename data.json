@@ -8,20 +8,20 @@
       "info": { "ch": "進入中興大學。",
                "en": "" },
       "text": {
-        "ch": "就讀資訊科學與工程學系,第一次接觸資訊領域",
+        "ch": "就讀資訊科學與工程學系,第一次接觸資訊領域。",
+        "en": ""
+      } },
+    { "title": "專題競賽",
+      "date": "05/06/2015",
+      "img": "./img/timeline/povon.jpg",
+      "img_t": "./img/timeline/povon_t.jpg",
+      "period": "2015/06/05~2015/06/05",
+      "info": { "ch": "榮獲第二名",
+                "en": "" },
+      "text": {
+        "ch": "我們小組獨立完成了Povon雲端電力監控系統,並在系上的專題競賽榮獲系上教授們的肯定。",
         "en": ""
       } }
-    // { "title": "MOPCON 2013",
-    //   "date": "28/10/2013",
-    //   "img": "./img/timeline/mopcon2013.jpg",
-    //   "img_t": "./img/timeline/mopcon2013_t.jpg",
-    //   "period": "2013/10/28~2013/10/29",
-    //   "info": { "ch": "仍舊會眾乙枚，而且完全不是開發者的狀態 ( ;  _  ; )。",
-    //             "en": "Still an attendee, not a developer. ( ;  _  ; )" },
-    //   "text": {
-    //     "ch": "",
-    //     "en": ""
-    //   } }
     // { "title": "SITCON 2014",
     //   "date": "15/03/2014",
     //   "img": "./img/timeline/sitcon2014.jpg",
