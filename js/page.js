@@ -98,19 +98,19 @@ $(function(){
       $.getScript('./js/lightbox.js');
       $.getScript('./js/timeline.js');
       $.getScript('./js/image.js');
-      $.get('./timeline_extend.html', function(extend){
-        $('#timeline').append(extend);
-        $('#timeline_extend').click(function(){
-          var a=$('#toggle').prop("checked");
-          $('#extension').animate({height: 'toggle'}, 'slow');
-        });
-        if(dataGet == false){
-          $('.timelineLoader').remove();
-          $('.timelineFlat').remove();
-          $('#timeline_extend').remove();
-          $('#extension').show().find('.title').hide();
-        }
-      });
+      // $.get('./timeline_extend.html', function(extend){
+      //   $('#timeline').append(extend);
+      //   $('#timeline_extend').click(function(){
+      //     var a=$('#toggle').prop("checked");
+      //     $('#extension').animate({height: 'toggle'}, 'slow');
+      //   });
+      //   if(dataGet == false){
+      //     $('.timelineLoader').remove();
+      //     $('.timelineFlat').remove();
+      //     $('#timeline_extend').remove();
+      //     $('#extension').show().find('.title').hide();
+      //   }
+      // });
     }
 
     // if(($('#activity').offset().top-progress+50)<start_offset && flag==1){
